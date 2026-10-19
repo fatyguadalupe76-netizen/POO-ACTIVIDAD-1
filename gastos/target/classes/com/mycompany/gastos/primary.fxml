@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" prefHeight="450.0" prefWidth="650.0" spacing="25.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.gastos.PrimaryController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <children>
+      <HBox spacing="40.0" alignment="CENTER">
+         <children>
+            <VBox spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" spacing="15.0">
+                     <children>
+                        <Label text="Alimentación" prefWidth="120.0" />
+                        <TextField fx:id="txtAlimentacion" prefWidth="120.0" promptText="0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="15.0">
+                     <children>
+                        <Label text="Refrigerios" prefWidth="120.0" />
+                        <TextField fx:id="txtRefrigerios" prefWidth="120.0" promptText="0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="15.0">
+                     <children>
+                        <Label text="Transporte" prefWidth="120.0" />
+                        <TextField fx:id="txtTransporte" prefWidth="120.0" promptText="0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="15.0">
+                     <children>
+                        <Label text="Telefonía" prefWidth="120.0" />
+                        <TextField fx:id="txtTelefonia" prefWidth="120.0" promptText="0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" spacing="15.0">
+                     <children>
+                        <Label text="Otros" prefWidth="120.0" />
+                        <TextField fx:id="txtOtros" prefWidth="120.0" promptText="0" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox spacing="20.0">
+               <children>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Label text="Total semanal" />
+                        <TextField fx:id="txtTotal" editable="false" prefWidth="160.0" />
+                     </children>
+                  </VBox>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Label text="Gasto más alto" />
+                        <TextField fx:id="txtGastoAlto" editable="false" prefWidth="160.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#calcular" text="Calcular estadísticas">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#limpiar" text="Limpiar">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
